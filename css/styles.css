@@ -58,9 +58,6 @@ header {
 	width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
-
-
-	outline: 2px solid tomato;
 }
 
 .padding {
@@ -216,8 +213,6 @@ header {
 	text-align: center;
 }
 
-
-
 .team {
 	background-color: var(--secondary-bg-color);
 	font-size: 16px;
@@ -276,9 +271,11 @@ address {
 
 .gallery-buttons {
 	padding-bottom: 50px;
+	display: flex;
+	margin: 0 auto;
 }
 
-.gallery-button {
+.gallery-text {
 	padding: 6px 25px;
 	background: var(--secondary-bg-color);
 	font-family: inherit;
@@ -290,12 +287,40 @@ address {
 	cursor: pointer;
 	border-color: transparent;
 	border-radius: 4px;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-button:hover,
-.gallery-button:focus {
+.gallery-button+.gallery-button {
+	margin-left: 8px;
+}
+
+.padding-portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.gallery-text:hover,
+.gallery-text:focus {
 	background: var(--highlighted-color);
 	color: var(--white-color);
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projects-card {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.projects-card:nth-child(3n) {
+	margin-right: 0;
+}
+
+.projects-card:nth-last-child(-n + 3) {
+	margin-bottom: 0;
 }
 
 .projects-title {
@@ -309,7 +334,6 @@ address {
 .projects-card {
 	width: 370px;
 	border: 1px solid var(--secondary-bg-color);
-	outline: 2px solid tomato;
 }
 
 .projects-name {
