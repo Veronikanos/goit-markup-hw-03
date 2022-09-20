@@ -129,10 +129,11 @@ header {
 
 .hero {
 	text-align: center;
+	background-color: var(--header-footer-background-color);
+	padding: 200px 0;
 }
 
 .hero h1 {
-
 	padding-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
@@ -141,7 +142,6 @@ header {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--white-color);
-	background-color: var(--header-footer-background-color);
 }
 
 .hero-button {
@@ -272,6 +272,7 @@ address {
 .gallery-buttons {
 	padding-bottom: 50px;
 	display: flex;
+	justify-content: center;
 	margin: 0 auto;
 }
 
