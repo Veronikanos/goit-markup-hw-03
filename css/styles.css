@@ -333,7 +333,6 @@ address {
 
 .projects-card {
 	width: 370px;
-	border: 1px solid var(--secondary-bg-color);
 }
 
 .projects-name {
@@ -345,4 +344,5 @@ address {
 
 .projects-description {
 	padding: 20px 24px;
+	border: 1px solid var(--secondary-bg-color);
 }
