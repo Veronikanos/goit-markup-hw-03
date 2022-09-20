@@ -11,7 +11,9 @@ html {
 	box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
@@ -33,7 +35,13 @@ ul {
 	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
 }
 
@@ -77,20 +85,22 @@ header {
 
 .highlight-text,
 .active,
-.nav-links a:hover, .nav-links a:focus,
-.nav-contacts a:hover, .nav-contacts a:focus {
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-contacts a:hover,
+.nav-contacts a:focus {
 	color: var(--highlighted-color);
 }
 
 .list {
-		padding: 0;
+	padding: 0;
 }
 
 .nav-bar {
 	display: flex;
 }
 
-.nav-bar > .nav-links {
+.nav-bar>.nav-links {
 	margin-left: 93px;
 }
 
@@ -111,7 +121,7 @@ header {
 	margin-right: 50px;
 }
 
-.nav-links.nav-contacts{
+.nav-links.nav-contacts {
 	margin-left: auto;
 }
 
@@ -121,7 +131,7 @@ header {
 }
 
 .hero {
-text-align: center;
+	text-align: center;
 }
 
 .hero h1 {
@@ -133,7 +143,8 @@ text-align: center;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--white-color);	background-color: var(--header-footer-background-color);
+	color: var(--white-color);
+	background-color: var(--header-footer-background-color);
 }
 
 .hero-button {
@@ -149,11 +160,34 @@ text-align: center;
 	font-family: inherit;
 	border-color: transparent;
 	border-radius: 4px;
-
 }
 
 .hidden-header {
 	display: none;
+}
+
+.preferences-list,
+.works-pictures,
+.team-cards {
+	display: flex;
+}
+
+.preferences-block {
+	width: calc((100% - 90px) / 4);
+	margin-right: 30px;
+}
+
+.works-picture img {
+	width: 370px;
+}
+
+.works-picture:not(:last-child),
+.team-card:not(:last-child) {
+	margin-right: 30px;
+}
+
+.preferences-block:last-child {
+	margin-right: 0;
 }
 
 .preferences-header {
@@ -182,6 +216,8 @@ text-align: center;
 	text-align: center;
 }
 
+
+
 .team {
 	background-color: var(--secondary-bg-color);
 	font-size: 16px;
@@ -193,7 +229,7 @@ text-align: center;
 	text-align: center;
 	background-color: var(--white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+	border-radius: 0px 0px 4px 4px;
 }
 
 .team .team-photo {
@@ -207,7 +243,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team .team-text {
-padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 footer {
