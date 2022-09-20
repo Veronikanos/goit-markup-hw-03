@@ -7,6 +7,14 @@
 	--secondary-bg-color: #F5F4FA;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
 body {
 	color: var(--primary-color);
 	font-family: 'Roboto', sans-serif;
@@ -22,11 +30,39 @@ img {
 
 ul {
 	list-style: none;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
 }
 
 a {
 	color: var(--primary-color);
 	text-decoration: none;
+}
+
+header {
+	border-bottom: 1px solid var(--secondary-bg-color);
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+
+	outline: 2px solid tomato;
+}
+
+.padding {
+	padding-top: 47px;
+	padding-bottom: 47px;
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
 }
 
 .logo {
@@ -35,18 +71,48 @@ a {
 	font-size: 26px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
+	align-self: center;
+	display: block;
 }
 
 .highlight-text,
 .active,
-.nav-links a:hover .nav-links a:focus {
+.nav-links a:hover, .nav-links a:focus,
+.nav-contacts a:hover, .nav-contacts a:focus {
 	color: var(--highlighted-color);
 }
 
+.list {
+		padding: 0;
+}
+
+.nav-bar {
+	display: flex;
+}
+
+.nav-bar > .nav-links {
+	margin-left: 93px;
+}
+
 .nav-links {
+	display: flex;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+}
+
+.nav-links a {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.nav-links .nav-link:not(:last-child) {
+	margin-right: 50px;
+}
+
+.nav-links.nav-contacts{
+	margin-left: auto;
 }
 
 .nav-contacts a,
@@ -54,18 +120,25 @@ a {
 	color: var(--secondary-color);
 }
 
+.hero {
+text-align: center;
+}
+
 .hero h1 {
+
+	padding-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--white-color);
-	background-color: var(--header-footer-background-color)
+	color: var(--white-color);	background-color: var(--header-footer-background-color);
 }
 
 .hero-button {
+	padding: 10px 32px;
+
 	color: var(--white-color);
 	background-color: var(--highlighted-color);
 	font-weight: 700;
@@ -74,6 +147,9 @@ a {
 	text-align: center;
 	letter-spacing: 0.06em;
 	font-family: inherit;
+	border-color: transparent;
+	border-radius: 4px;
+
 }
 
 .hidden-header {
@@ -81,6 +157,7 @@ a {
 }
 
 .preferences-header {
+	padding-bottom: 10px;
 	font-size: inherit;
 	font-weight: 700;
 	line-height: 1.14;
@@ -93,7 +170,12 @@ a {
 	color: var(--secondary-color);
 }
 
+.footer-contacts a:first-child {
+	padding-bottom: 9px;
+}
+
 .section-headers {
+	padding-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.18;
@@ -106,17 +188,45 @@ a {
 	line-height: 1.18;
 }
 
-.team-member {
+.team .team-card {
+	width: 270px;
+	text-align: center;
+	background-color: var(--white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team .team-photo {
+	padding-bottom: 30px;
+}
+
+.team .team-member {
+	padding-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
+}
+
+.team .team-text {
+padding-bottom: 30px;
 }
 
 footer {
 	background-color: var(--header-footer-background-color)
 }
 
+footer .container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
 .footer-address {
+	padding-bottom: 9px;
 	line-height: 1.71;
+}
+
+.logo-footer {
+	display: inline-block;
+	padding-bottom: 20px;
 }
 
 .logo-footer,
@@ -128,7 +238,12 @@ address {
 	font-style: normal;
 }
 
+.gallery-buttons {
+	padding-bottom: 50px;
+}
+
 .gallery-button {
+	padding: 6px 25px;
 	background: var(--secondary-bg-color);
 	font-family: inherit;
 	font-weight: 500;
@@ -137,6 +252,8 @@ address {
 	text-align: center;
 	letter-spacing: 0.03em;
 	cursor: pointer;
+	border-color: transparent;
+	border-radius: 4px;
 }
 
 .gallery-button:hover,
@@ -150,11 +267,22 @@ address {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	padding-bottom: 4px;
 }
 
-.projects-description {
+.projects-card {
+	width: 370px;
+	border: 1px solid var(--secondary-bg-color);
+	outline: 2px solid tomato;
+}
+
+.projects-name {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: var(--secondary-color);
+}
+
+.projects-description {
+	padding: 20px 24px;
 }
