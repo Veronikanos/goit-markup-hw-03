@@ -1,0 +1,160 @@
+:root {
+	--primary-color: #212121;
+	--secondary-color: #757575;
+	--highlighted-color: #2196F3;
+	--white-color: #FFFFFF;
+	--header-footer-background-color: #2F303A;
+	--secondary-bg-color: #F5F4FA;
+}
+
+body {
+	color: var(--primary-color);
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+.highlight-text,
+.active,
+.nav-links a:hover .nav-links a:focus {
+	color: var(--highlighted-color);
+}
+
+.nav-links {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.nav-contacts a,
+.team-text {
+	color: var(--secondary-color);
+}
+
+.hero h1 {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white-color);
+	background-color: var(--header-footer-background-color)
+}
+
+.hero-button {
+	color: var(--white-color);
+	background-color: var(--highlighted-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	text-align: center;
+	letter-spacing: 0.06em;
+	font-family: inherit;
+}
+
+.hidden-header {
+	display: none;
+}
+
+.preferences-header {
+	font-size: inherit;
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.preferences-text,
+.footer-contacts a {
+	line-height: 1.71;
+	color: var(--secondary-color);
+}
+
+.section-headers {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.18;
+	text-align: center;
+}
+
+.team {
+	background-color: var(--secondary-bg-color);
+	font-size: 16px;
+	line-height: 1.18;
+}
+
+.team-member {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+footer {
+	background-color: var(--header-footer-background-color)
+}
+
+.footer-address {
+	line-height: 1.71;
+}
+
+.logo-footer,
+.footer-address {
+	color: var(--white-color);
+}
+
+address {
+	font-style: normal;
+}
+
+.gallery-button {
+	background: var(--secondary-bg-color);
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+	background: var(--highlighted-color);
+	color: var(--white-color);
+}
+
+.projects-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.projects-description {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--secondary-color);
+}
