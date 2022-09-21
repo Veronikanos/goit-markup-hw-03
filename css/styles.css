@@ -273,10 +273,9 @@ address {
 }
 
 .gallery-buttons {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
-	margin: 0 auto;
 }
 
 .gallery-text {
