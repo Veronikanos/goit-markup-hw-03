@@ -60,9 +60,9 @@ header {
 	margin: 0 auto;
 }
 
-.padding {
-	padding-top: 47px;
-	padding-bottom: 47px;
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .main-nav {
@@ -134,7 +134,9 @@ header {
 }
 
 .hero h1 {
-	padding-bottom: 30px;
+	width: 696px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -174,8 +176,12 @@ header {
 	margin-right: 30px;
 }
 
-.preferences>.container {
+/* .preferences>.container {
 	padding-top: 94px;
+} */
+
+.works.section {
+	padding-top: 0;
 }
 
 .works-picture img {
@@ -192,7 +198,7 @@ header {
 }
 
 .preferences-header {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 	font-size: inherit;
 	font-weight: 700;
 	line-height: 1.14;
@@ -205,12 +211,12 @@ header {
 	color: var(--secondary-color);
 }
 
-.footer-contacts a:first-child {
-	padding-bottom: 9px;
+.footer-contacts li:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .section-headers {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.18;
@@ -223,6 +229,10 @@ header {
 	line-height: 1.18;
 }
 
+.team-description {
+	padding: 30px 0;
+}
+
 .team .team-card {
 	width: 270px;
 	text-align: center;
@@ -231,37 +241,26 @@ header {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team .team-photo {
-	padding-bottom: 30px;
-}
-
 .team .team-member {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 }
 
-.team .team-text {
-	padding-bottom: 30px;
-}
-
 footer {
-	background-color: var(--header-footer-background-color)
-}
-
-footer .container {
+	background-color: var(--header-footer-background-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
 .footer-address {
-	padding-bottom: 9px;
+	margin-bottom: 9px;
 	line-height: 1.71;
 }
 
 .logo-footer {
 	display: inline-block;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .logo-footer,
@@ -292,16 +291,10 @@ address {
 	cursor: pointer;
 	border-color: transparent;
 	border-radius: 4px;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-button+.gallery-button {
 	margin-left: 8px;
-}
-
-.padding-portfolio {
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 .gallery-text:hover,
@@ -333,7 +326,7 @@ address {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 .projects-card {
@@ -350,4 +343,5 @@ address {
 .projects-description {
 	padding: 20px 24px;
 	border: 1px solid var(--secondary-bg-color);
+	border-top: none;
 }
